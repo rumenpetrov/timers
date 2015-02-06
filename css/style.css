@@ -1,0 +1,109 @@
+/* =========================================================================
+	#Reset
+========================================================================= */
+* { margin: 0; padding: 0; outline: 0; }
+
+/* =========================================================================
+	#Base
+========================================================================= */
+html,
+body { height: 100%; }
+
+body { min-width: 700px; background: #bdc3c7; font-family: 'Jura Regular', sans-serif; font-size: 13px; line-height: 1.3; color: #000; }
+
+a { color: #0252aa; text-decoration: none; cursor: pointer; }
+a {
+	-webkit-transition: 0.3s all; 
+	   -moz-transition: 0.3s all; 
+	    -ms-transition: 0.3s all; 
+	     -o-transition: 0.3s all; 
+	        transition: 0.3s all; 
+}
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 34px; }
+h4 { font-size: 28px; }
+h5 { font-size: 16px; }
+h6 { font-size: 12px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: 'Jura Semi-Bold', sans-serif; line-height: 1; font-weight: normal; }
+
+img { border: 0; vertical-align: middle; }
+
+ol,
+ul { list-style-position: inside; }
+
+input,
+select,
+textarea { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.3; color: #000; }
+
+[class^="btn"],
+input[type="submit"],
+input[type="button"],
+label:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover { cursor: pointer; }
+textarea { overflow: auto; resize: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* =========================================================================
+	#Helpers
+========================================================================= */
+.alignleft { float: left; }
+.alignright { float: right; }
+
+.clearfix:before,
+.clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* ==========================================================================
+	#Btns
+========================================================================== */
+.btn { display: inline-block; height: 25px; border: 0; padding: 0 10px; background: #3498db; font-family: 'Jura Semi-Bold', sans-serif; font-size: 16px; line-height: 25px; color: #fff; vertical-align: middle; }
+.btn:hover { background: #2980b9; text-decoration: none; }
+.btn:disabled { background: #95a5a6; background: #7f8c8d; cursor: default; }
+
+.btn-stop { background: #e74c3c; }
+.btn-stop:hover { background: #c0392b; }
+
+/* =========================================================================
+	#Containers
+========================================================================= */
+.container { position: relative; min-height: 100%; }
+.shell { width: 700px; margin: 0 auto; }
+
+/* =========================================================================
+	#Header
+========================================================================= */
+.header { padding: 10px 0; background: #2c3e50; }
+.header h1 { font-size: 25px; color: #fff; text-align: center; }
+
+/* =========================================================================
+	#Main
+========================================================================= */
+.main { }
+
+/* ==========================================================================
+	#Timers
+========================================================================== */
+.timers { padding: 20px 40px; }
+
+.timer-row { }
+.timer-row ~ .timer-row { padding-top: 20px; }
+.timer-bar { overflow: hidden; height: 40px; padding: 0 20px; background: #95a5a6; }
+.timer-bar.active { background: #30D630; }
+.timer-bar.active .timer-text { color: #000; text-shadow: 0 0 10px #fff; }
+.timer-bar.stop { background: #e74c3c; }
+.timer-bar.stop .timer-text { color: #000; text-shadow: 0 0 10px #fff; }
+.timer-text { float: left; padding-top: 6px; font-size: 24px; font-weight: bold; }
+.timer { float: right; padding-top: 14px; font-family: 'Orbitron Medium'. sans-serif; font-size: 22px; line-height: 1; color: #fff; }
+.timer-btns { padding: 5px; background: #34495e; text-align: right; }
