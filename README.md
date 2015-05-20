@@ -1,2 +1,2 @@
 # timers
-Some timers that I wrote for work.
+Basic JS timers.
