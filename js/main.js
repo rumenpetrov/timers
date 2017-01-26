@@ -24,6 +24,10 @@
 		$containerThird;
 
 	$doc.ready(function() {
+		setInterval(function() {
+			displayTime($('#timer-zero'));
+		}, 1000);
+
 		// disables all stop buttons
 		$(".timer-row .btn-stop").attr('disabled','disabled');
 
@@ -176,6 +180,16 @@
 	function getCurrentTime() {
 	  return ((new Date()).getTime());
 	}
+
+	var displayTime = function(container) {
+		var now = new Date();
+		var HH = (now.getHours() < 10) ? '0' + now.getHours() : now.getHours();
+		var MM = (now.getMinutes() < 10) ? '0' + now.getMinutes() : now.getMinutes();
+		var SS = (now.getSeconds() < 10) ? '0' + now.getSeconds() : now.getSeconds();
+		var time = HH + ':' + MM + ':' + SS;
+		
+		$(container).text(time);
+	};
 
 	// first row timer function definition
     var timerFirst = function() {
